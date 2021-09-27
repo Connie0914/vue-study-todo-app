@@ -1,0 +1,61 @@
+/* body に対して font 関係の設定 */
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+/* index.htmlのappに対してclassを付けて、CSSで設定
+containerはある程度の幅を持たせつつ中央揃えにする */
+.container {
+    width: 300px;
+    margin: auto;
+}
+
+#app h1 {
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0;
+}
+
+/* liも少し余裕を持たせてレイアウトしていきたい */
+#app li {
+    line-height: 1.5;
+    padding: 5px;
+    margin: 2px;
+    border: solid 1px #000000;
+    border-radius: 10px;
+}
+
+/* 入力フォームに少し余白をもたせる */
+#app input[type=text] {
+    padding: 2ps;
+}
+
+/* X印がかっこ悪いのでデザイン変える */
+.command {
+    font-size: 12px;
+    cursor: pointer;
+    color: #08e;
+    float: right;
+}
+
+/* リストの黒丸を消す */
+#app ul {
+    padding: 0;
+    list-style: none;
+}
+
+#app li > span.done {
+text-decoration: line-through;
+color: #bbb;
+}
+
+.info {
+    color: #bbb;
+    font-size: 12px;
+    font-weight: nomal;
+}
+
+#app h1 > button {
+    float: right;
+}
